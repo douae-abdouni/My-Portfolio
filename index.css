@@ -1,0 +1,456 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0a192f, #1a1a2e); /* Dark blue with violet */
+    color: #fff; /* Light text color */
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(135deg, #0a192f, #1a1a2e); /* Dark blue with violet */
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+#hero h1 {
+    font-family: 'Playfair Display', serif; /* New font */
+    font-size: 3em; /* Larger font size */
+    margin-bottom: 20px;
+    animation: fadeInDown 1.5s ease-in-out; /* Animation */
+}
+
+#hero h1 span.highlight {
+    color: #64ffda; /* Teal highlight color */
+    font-weight: bold;
+    text-shadow: 0 0 10px #64ffda, 0 0 20px #64ffda; /* Glow effect */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #64ffda;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #f8f8f8;
+   
+}
+/* Divider Line */
+.section-divider {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(90deg, #64ffda, #1a1a2e); /* Teal to dark violet gradient */
+    margin: 0 auto; /* Center the line */
+    width: 98%; /* Adjust width as needed */
+}
+
+/* Header Section */
+header {
+    background: violet; /* Dark blue with violet */
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #ddd;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.social-icons {
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.5em;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #64ffda; /* Teal color for hover */
+}
+
+/* About Section */
+#about {
+    padding: 60px 0;
+    background: #1a1a2e; /* Dark violet */
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.about-text {
+    max-width: 800px; /* Wider text area */
+    text-align: left;
+}
+
+.about-text h2 {
+    font-size: 2.5em; /* Larger heading */
+    color: #64ffda; /* Teal color */
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.5em; /* Larger paragraph text */
+    color: #ddd; /* Light text color */
+    line-height: 1.8; /* Better line spacing */
+    margin-bottom: 20px; /* Add some space below the paragraph */
+}
+
+.profile-img {
+    width: 250px; /* Larger image */
+    height: auto;
+    border-radius: 10px; /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(100, 255, 218, 0.2); /* Teal shadow */
+    animation: fadeIn 1.5s ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.profile-img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 8px 16px rgba(100, 255, 218, 0.4); /* Stronger shadow on hover */
+}
+
+/* Skills Section */
+#skills {
+    padding: 60px 0;
+    background: #1a1a2e; /* Dark violet */
+}
+
+#skills h2{
+    font-size: 2em;
+    color: #64ffda; /* Teal color */
+    margin-bottom: 20px;
+}
+.skills-category {
+    margin-bottom: 40px;
+}
+
+.skills-category h3 {
+    font-size: 1.5em;
+    color: #fff; /* Light text color */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.skill {
+    background: #0a192f; /* Dark blue */
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.skill:hover {
+    transform: translateY(-10px);
+    background: #64ffda; /* Teal color for hover */
+    color: #0a192f; /* Dark text on hover */
+}
+
+/* Projects Section */
+#projects {
+    padding: 60px 0;
+    background: #0a192f; /* Dark blue */
+}
+#projects h2{
+    font-size: 2em;
+    color: #64ffda; /* Teal color */
+    margin-bottom: 20px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project {
+    background: #1a1a2e; /* Dark violet */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(100, 255, 218, 0.2); /* Teal shadow */
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project h3 {
+    margin: 15px 0 10px;
+    font-size: 1.2em;
+    color: #fff; /* Light text color */
+}
+
+.project p {
+    font-size: 0.9em;
+    color: #ddd; /* Light text color */
+    margin-bottom: 15px;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #64ffda; /* Teal color */
+    color: #0a192f; /* Dark text */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: background 0.3s ease;
+}
+
+.project-link:hover {
+    background: #52d1b2; /* Darker teal on hover */
+}
+
+/* Certifications Section */
+#certifications {
+    padding: 60px 0;
+    background: #1a1a2e; /* Dark violet */
+}
+
+#certifications h2{
+    font-size: 2em;
+    color: #64ffda; /* Teal color */
+    margin-bottom: 20px;
+}
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.certification {
+    background: #0a192f; /* Dark blue */
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certification:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(100, 255, 218, 0.2); /* Teal shadow */
+}
+
+.certification img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.certification h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #fff; /* Light text color */
+}
+
+.certification p {
+    font-size: 0.9em;
+    color: #ddd; /* Light text color */
+    margin: 5px 0;
+}
+
+/* Resume Section */
+#resume {
+    padding: 60px 0;
+    background: #0a192f; /* Dark blue */
+    text-align: center;
+}
+
+.resume-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #64ffda; /* Teal color */
+    color: #0a192f; /* Dark text */
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.resume-link:hover {
+    background: #52d1b2; /* Darker teal on hover */
+}
+
+/* CV Download Section */
+#cv-download {
+    padding: 60px 0;
+    background: #0a192f; /* Dark blue */
+    text-align: center;
+}
+
+#cv-download h2 {
+    font-size: 2.5em;
+    color: #64ffda; /* Teal color */
+    margin-bottom: 20px;
+}
+
+#cv-download p {
+    font-size: 1.2em;
+    color: #ddd; /* Light text color */
+    margin-bottom: 30px;
+}
+
+.cv-download-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #64ffda; /* Teal color */
+    color: #0a192f; /* Dark blue text */
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    transition: background 0.3s ease;
+}
+
+.cv-download-button:hover {
+    background: #ffffff; /* Darker teal on hover */
+    font-size: 20px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 0;
+    background: #1a1a2e; /* Dark violet */
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    color: #ffffff; /* Teal color */
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2em;
+    color: #ddd; /* Light text color */
+    margin: 10px 0;
+}
+
+#contact i {
+    margin-right: 10px; /* Space between icon and text */
+    color: #ffffff; /* Teal color for icons */
+}
+#contact i:hover , #contact .email:hover , #contact .phone:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 8px 16px rgba(100, 255, 218, 0.4); /* Stronger shadow on hover */
+}
+
+#contact .email {
+    color: #64ffda; /* Teal color for email */
+}
+
+#contact .phone {
+    color: #64ffda; /* Teal color for phone */
+}
+
+
+/* Footer */
+footer {
+    background: #0a192f; /* Dark blue */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+footer .social-icons a {
+    color: #fff;
+    font-size: 1.2em;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #64ffda; /* Teal color for hover */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
